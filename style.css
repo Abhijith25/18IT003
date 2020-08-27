@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(240, 235, 235);
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+}
+
+.mynav
+{
+    margin-left: 300px;
+}
+
+
+.my-body
+{
+    border-radius: 5px;
+    border: 3px black;
+    background-color: white;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 160px;
+    margin-right: 130px;
+    padding: 20px;
+    margin-top: 30px;
+    box-shadow: 0 4px 5px 0 darkslategray, 0 3px 20px 0 darkslategray;
+        
+
+}
+
+.myslide
+{
+    
+    max-width: 85%;
+    align-content: center;
+    margin-left: 100px;
+    box-shadow: 0 4px 5px 0 darkslategray, 0 3px 20px 0 darkslategray;
+}
+
+iframe
+{
+    display: none;
+}
+
+h3
+{
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+
+}
