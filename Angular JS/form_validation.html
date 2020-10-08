@@ -1,0 +1,55 @@
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+        <title>AngularJS Simple Form Demo</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="commoncss.css">
+	</head>
+
+	<body ng-app="formApp">
+        <div class="mycss">
+            <h3>Form Validation - AngularJS</h3><br>
+        <div>
+		<div ng-controller="FormController">
+
+			<form name="form" novalidate class="css-form">
+				Name : <input type="text" ng-model="employee.name" name="empName" ng-required="true"/><br />
+    				<div ng-show="form.$submitted || form.empName.$touched">
+      					<span style="color:orange" ng-show="form.empName.$error.required">Please enter your name.</span>
+    				</div>
+
+				<br>E-mail : <input type="email" name="empEmail" ng-model="employee.email" ng-required="true"/><br />
+    				<div ng-show="form.$submitted || form.empEmail.$touched">
+      					<span style="color:orange" ng-show="form.empEmail.$error.required">Please enter an email-id.</span>
+      					<span style="color:red" ng-show="form.empEmail.$error.email">This is not a valid email.</span>
+    				</div>
+
+				<br>Role : <input type="radio" ng-model="employee.role" value="student" />Student
+				<input type="radio" ng-model="employee.role" value="teacher" />Teachers<br /></br>
+
+				<input type="button" ng-click="reset()" value="Reset" />
+
+				<input type="submit" ng-disabled="form.$invalid" ng-click="save(employee)" value="Submit" />
+			</form>
+
+  			<p>Person Details = {{employee | json}}</p>
+  			<p>Backend = {{master | json | uppercase}}</p>
+		</div>
+
+	<style type="text/css">
+		.css-form input.ng-invalid.ng-touched {
+			background-color: #FA787E;
+		}
+
+		.css-form input.ng-valid.ng-touched {
+			background-color: #78FA89;
+		}
+	</style>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+    <script type="text/javascript" src="formapp.js"></script>
+        </div>
+</body>
+</html>

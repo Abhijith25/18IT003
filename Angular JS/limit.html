@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html  ng-app>
+<head>
+<title>Limit To</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.js"></script>
+<link rel="stylesheet" type="text/css" href="commoncss.css">
+
+</head>
+<body>
+<div class="mydiv">
+  <div ng-controller="limitController">
+
+    Defined Array of Numbers: {{numbers}}<br>
+    <br>Limit  to:
+    <input type="integer" ng-model="limit">
+
+    <p>Limiting to {{limit}} entries : {{ numbers | limitTo:limit }}</p>
+     
+
+  </div>
+</div>
+
+</body>
+<script src="limitController.js"></script>
+</html>

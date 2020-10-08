@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html  ng-app>
+<head>
+<title> ng-hide and ng-show </title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+<link rel="stylesheet" type="text/css" href="commoncss.css">
+
+</head>
+
+<body ng-app>
+<div class="mycss">
+
+   
+   <p>Demo of ng-show and ng-hide.</b></p>
+   <p>	
+  	<b>
+	Enter Course ID: <input type="text" ng-model="name">
+
+      <div ng-show="name =='18IT510'"> Welcome to WebTechnologies ❤️<br><br>Happy Learning!</div>
+      <div ng-show="name =='18IT520'"> Welcome to Information Security ❤️<br><br>Happy Learning!</div>
+      <div ng-show="name =='18IT530'"> Welcome to Data Mining ❤️<br><br>Happy Learning!</div>
+      <div ng-show="name =='18IT540'"> Welcome to Accounting and Finance ❤️<br><br>Happy Learning!</div>
+
+
+  	<div ng-hide="!name == ''"> Welcome User !!</div>
+	</b>
+  </p>
+
+</div>
+
+</body>
+</html>
+

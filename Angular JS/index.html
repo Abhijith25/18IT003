@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>Difference</title>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" type="text/css" href="commoncss.css">
+    <style>
+        body{
+            background:url('bg1.jpg');
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="mycss">
+        <h3>Difference between two numbers</h3>
+        <div ng-app="myFirstApp" ng-controller="myFirstController">
+            <div class="mybox">
+                Enter first number:
+                <input type="text" ng-model="n1" ng-keyup="cal();">
+            </div>
+            <div class="mybox">
+                <br>Enter second number:
+                <input type="text" ng-model="n2" ng-keyup="cal();">
+            </div>
+            <div class="mybox">
+                <br><b>Difference: {{totalValue}}</b>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+
+
+
+<footer>
+   <div style="color:floralwhite; text-align:center; margin-top: 20px;"><b>© Abhijith (18IT003)</b></div>
+</footer>
+</html>
